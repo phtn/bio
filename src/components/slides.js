@@ -19,7 +19,7 @@ const settings = {
 	arrows: false,
 	dots: true,
 	afterChange: ()=> console.log('slides'),
-	speed: 300,
+	speed: 500,
 	autoplay: true
 }
 

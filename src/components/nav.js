@@ -13,7 +13,7 @@ const Nav = ({brand, pwd}) => {
 		<div className="animated fadeInDown" style={styles.navDiv}>
 			<span className="red-label">>_&nbsp;</span>
 			<span className="yell-label">{brand}</span>
-			<span className="red-label">&nbsp;\</span>
+			<span className="red-label">\</span>
 			<span className="yell-label animated fadeInRight">&nbsp;{pwd}</span>
 		</div>
 	)

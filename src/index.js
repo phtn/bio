@@ -1,12 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
-import * as firebase from 'firebase'
+import React from 'react'
+import { render } from 'react-dom'
+import { Router, Route, browserHistory } from 'react-router'
+import App from './App'
+import './index.css'
+
+
+ 
 
 
 
-ReactDOM.render(
-  <App />,
+render(
+	<Router history={ browserHistory }>
+		<Route path='/' component={ App } />
+	</Router>,
   document.getElementById('root')
-);
+)
