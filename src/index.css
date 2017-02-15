@@ -1,0 +1,36 @@
+body {
+  margin-top: 10;
+  margin-right: 10;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: #2c312e;
+  color: #ffefb9;
+}
+.red-icon {
+	color: #e85454;
+	margin-right: 4px;
+	font-size: 16px;
+}
+.yell-label {
+	color: #ffefb9;
+}
+.red-label {
+	color: #e85454;
+	font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  font-size: 16px;
+}
+.nav-div {
+	height: 25px;
+	padding-top: 5px;
+	text-align: center;
+	border-bottom: 1px solid #222;
+}
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card-1:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
