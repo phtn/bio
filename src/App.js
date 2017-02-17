@@ -21,7 +21,7 @@ firebase.initializeApp(config);
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: 'Ivy' , level: 1}
+    this.state = { name: 'Ivy' , level: 1, hp: 100}
   }
 
   componentDidMount() {
