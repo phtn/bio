@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './components/nav'
-//import Jumbo from './components/jumbo'
-import Slides from './components/slides'
 import './animate.css';
+import './font-awesome/css/font-awesome.min.css'
 
 import * as firebase from 'firebase'
 
@@ -40,8 +39,6 @@ class App extends Component {
       <div className="App">
         <Nav brand='phtn458' pwd={ this.state.name }/>
 
-        {/*<Jumbo />*/}
-        <Slides/>
       </div>
     );
   }

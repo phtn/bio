@@ -4,22 +4,26 @@ const styles = {
 		height: '25px',
 		paddingTop: '5px',
 		textAlign: 'left',
-		borderBottom: '1px solid #222',
+	},
+	termIcon: {
+		color: '#e85454',
+		fontSize: '16px',
+		marginRight: '5px'
+	},
+	brand: {
+		color: '#222',
+		fontFamily: 'Questrial, sans-serif'
 	}
 }
 
 const Nav = ({brand, pwd}) => {
 	return (
 		<div className="animated fadeInDown" style={styles.navDiv}>
-			<span className="red-label">>_&nbsp;</span>
-			<span className="yell-label">{brand}</span>
-			<span className="red-label">\</span>
-			<span className="yell-label animated fadeInRight">&nbsp;{pwd}</span>
+			<span style={styles.termIcon} className="fa fa-terminal"></span>
+			<span style={styles.brand}>{brand}</span>
 		</div>
 	)
 }
 
-Nav.propTypes = {
-	brand: React.PropTypes.string.isRequired
-}
+
 export default Nav

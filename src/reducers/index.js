@@ -1,10 +1,4 @@
 import { combineReducers } from 'redux'
-
-const users = () => { return [
-
-	{id: 1, name: 'Alexis Ren'},
-	{id: 2, name: 'Sadie'},
-
-]}
+import users from './users-reducer'
 
 export default combineReducers({ users })
