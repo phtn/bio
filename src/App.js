@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Nav from './components/nav'
+import Header from './components/header'
 import './animate.css';
 import './font-awesome/css/font-awesome.min.css'
 
@@ -37,8 +38,8 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Nav brand='phtn458' pwd={ this.state.name }/>
-
+        <Nav brand='phtn458'/>
+        <Header />
       </div>
     );
   }
