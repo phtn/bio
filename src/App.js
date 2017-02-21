@@ -4,6 +4,8 @@ import Header from './components/header'
 import PageTitle from './components/title'
 import Logo from './components/logo'
 import Slides from './components/slides'
+import GetStarted from './components/get-started'
+import Footer from './components/footer'
 
 import './animate.css';
 import './font-awesome/css/font-awesome.min.css'
@@ -47,6 +49,8 @@ class App extends Component {
         <PageTitle />
         <Logo />
         <Slides />
+        <GetStarted label='Get Started!'/>
+        {/*<Footer />*/}
       </div>
     );
   }

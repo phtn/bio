@@ -17,7 +17,7 @@ class Header extends Component {
 		  duration:      3000,
 		  angle:        { 0: 270 },
 		  easing:        'cubic.out',
-		  repeat: 			40
+		  repeat: 			20
 		}).play()
 
 		new mojs.Shape({
@@ -34,7 +34,7 @@ class Header extends Component {
 		  duration:      3000,
 		  angle:        { 0: 450 },
 		  easing:        'cubic.out',
-		  repeat: 			40
+		  repeat: 			20
 		}).play()
 
 		new mojs.Shape({
@@ -50,7 +50,7 @@ class Header extends Component {
 		  duration:      3000,
 		  angle:        { 0: 360 },
 		  easing:        'cubic.out',
-		  repeat: 			40
+		  repeat: 			20
 		}).play()
 	}
 	render() {
