@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import Nav from './components/nav'
 import Header from './components/header'
+import PageTitle from './components/title'
+import Logo from './components/logo'
+import Slides from './components/slides'
+
 import './animate.css';
 import './font-awesome/css/font-awesome.min.css'
 
@@ -40,6 +44,9 @@ class App extends Component {
       <div className="App">
         <Nav brand='phtn458'/>
         <Header />
+        <PageTitle />
+        <Logo />
+        <Slides />
       </div>
     );
   }
