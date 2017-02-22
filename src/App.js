@@ -5,7 +5,9 @@ import PageTitle from './components/title'
 import Logo from './components/logo'
 import Slides from './components/slides'
 import GetStarted from './components/get-started'
-import Footer from './components/footer'
+import Intro from './components/intro'
+import CreatePanel from './components/create'
+/*import Footer from './components/footer'*/
 
 import './animate.css';
 import './font-awesome/css/font-awesome.min.css'
@@ -27,11 +29,11 @@ firebase.initializeApp(config);
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: 'Ivy' , level: 1, hp: 100}
+    this.state = { showLogo: true}
   }
 
   componentDidMount() {
-    console.log('componentDidMount()')
+    console.log('firebase init')
     const rootRef = firebase.database().ref('samp');
     rootRef.on('value', snap => {
       this.setState({
@@ -39,7 +41,18 @@ class App extends Component {
       })
     })
   }
-  
+  componentWillUnmount() {
+    this.setState({showLogo: false})
+    console.log('componentWillUnmount()')
+  }
+  displayLogo(){
+    if(this.state.showLogo){
+      return( <Logo showLogo={this.state.showLogo}/> )
+    }
+  }
+  toggleLogo(){
+    return this.state.showLogo ? false : false
+  }
   render() {
 
     return (
@@ -47,9 +60,14 @@ class App extends Component {
         <Nav brand='phtn458'/>
         <Header />
         <PageTitle />
-        <Logo />
+        {this.displayLogo()}
         <Slides />
-        <GetStarted label='Get Started!'/>
+
+        <GetStarted label='Get Started!' showLogo={this.state.showLogo}/>
+        
+        <Intro />
+        <CreatePanel />
+
         {/*<Footer />*/}
       </div>
     );

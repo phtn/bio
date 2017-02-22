@@ -9,14 +9,14 @@ const styles = {
 		/*border: '1px solid #eee'*/
 	},
 	headerSlides: {
-		color: '#0288d1',
+		color: '#00bce4',
 		fontFamily: 'Questrial, sans-serif',
 		fontSize: '24px',
 		lineHeight: '50px'
 	}
 }
 const settings = {
-	arrows: true,
+	arrows: false,
 	autoplay: true,
 	speed: 1000,
 	autoplaySpeed: 1700,

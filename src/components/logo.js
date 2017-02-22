@@ -1,7 +1,24 @@
 import React, { Component } from 'react'
 import mojs from 'mo-js'
 
+
+
+const styles = {
+	logoDiv: {
+		display: 'none',
+	}
+}
+
+
+
 class Logo extends Component {
+	logoState(){
+		if (this.props.showLogo){
+			/*ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(this))*/
+			console.log(this.props.showLogo)
+			return this.logo()
+		}
+	}
 	logo() {
 		new mojs.Shape({
 			shape: 'circle',
@@ -54,7 +71,7 @@ class Logo extends Component {
 	} 
 	render(){
 		return(
-			<div>{this.logo()}</div>
+			<div style={styles.logoDiv}>{(this.logoState())}</div>
 		)
 	}
 }
