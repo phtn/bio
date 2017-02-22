@@ -71,7 +71,7 @@ class CreatePanel extends Component {
 		let copyTextarea = document.querySelector('#html-template-text')
 		copyTextarea.select()
 		document.execCommand('copy')
-		NotificationManager.info('copied!')
+		NotificationManager.success('copied!', 'STATUS', 1500)
 	}
 	notifyCopy(){
 		return null
